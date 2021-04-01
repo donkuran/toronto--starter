@@ -37,7 +37,7 @@ div > p {
 
 /*Navigation Bar*/
 
-nav {
+nav { 
     display: block;
     margin: 0;
     background-color: rgba(132, 136, 136, 0.836);
@@ -124,15 +124,23 @@ nav a:hover {
     height: auto;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, auto);
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 1.5rem;
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 3s;
+}
+
+@keyframes myAnimation {
+    0% {left: -2000px; }
+    100% {left: 0%; }
 }
 
 .cell {
     z-index: 1;
     position: relative;
-         
+    
 }
 
 .cell-1 {       
@@ -161,6 +169,7 @@ nav a:hover {
     grid-column: 3;
     grid-row: 2 / 4;
 }
+
 
 /*Opacity, Transformation Effect & shadow effect*/
 
