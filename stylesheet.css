@@ -35,6 +35,10 @@ div > p {
     margin: 2rem;
 }
 
+div > a > p {
+    margin: 2rem;
+}
+
 /*Navigation Bar*/
 
 nav { 
